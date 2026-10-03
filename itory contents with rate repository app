@@ -1,0 +1,124 @@
+ .github/workflows/test-chapter4.yml                |    28 [31m-[m
+ .github/workflows/test-chapter5.yml                |    47 [31m-[m
+ .gitignore                                         |    42 [32m+[m[31m-[m
+ AGENTS.md                                          |    41 [32m+[m
+ App.js                                             |    94 [32m+[m
+ .../part6/.github/workflows/test-chapter4.yml      |    28 [31m-[m
+ .../part6/.github/workflows/test-chapter5.yml      |    47 [31m-[m
+ OneDrive/Desktop/part6/.gitignore                  |     1 [31m-[m
+ OneDrive/Desktop/part6/README.md                   |   Bin [31m20[m -> [32m0[m bytes
+ OneDrive/Desktop/part6/library-backend/.gitignore  |     1 [31m-[m
+ OneDrive/Desktop/part6/library-backend/db.js       |    15 [31m-[m
+ OneDrive/Desktop/part6/library-backend/index.js    |    24 [31m-[m
+ .../Desktop/part6/library-backend/models/author.js |     1 [31m-[m
+ .../part6/library-backend/models/authors.js        |    16 [31m-[m
+ .../Desktop/part6/library-backend/models/book.js   |     1 [31m-[m
+ .../Desktop/part6/library-backend/models/books.js  |    27 [31m-[m
+ .../Desktop/part6/library-backend/models/user.js   |    14 [31m-[m
+ .../part6/library-backend/package-lock.json        |  2123 [31m----[m
+ .../Desktop/part6/library-backend/package.json     |    28 [31m-[m
+ .../Desktop/part6/library-backend/resolvers.js     |   316 [31m-[m
+ OneDrive/Desktop/part6/library-backend/schema.js   |    57 [31m-[m
+ OneDrive/Desktop/part6/library-backend/server.js   |    86 [31m-[m
+ OneDrive/Desktop/part6/library-frontend/.gitignore |    24 [31m-[m
+ OneDrive/Desktop/part6/library-frontend/README.md  |    16 [31m-[m
+ .../part6/library-frontend/eslint.config.js        |    29 [31m-[m
+ OneDrive/Desktop/part6/library-frontend/index.html |    13 [31m-[m
+ .../part6/library-frontend/package-lock.json       |  3095 [31m-----[m
+ .../Desktop/part6/library-frontend/package.json    |    30 [31m-[m
+ .../Desktop/part6/library-frontend/public/vite.svg |     1 [31m-[m
+ .../Desktop/part6/library-frontend/src/App.jsx     |   127 [31m-[m
+ .../library-frontend/src/components/Authors.jsx    |   102 [31m-[m
+ .../library-frontend/src/components/Books.jsx      |    70 [31m-[m
+ .../library-frontend/src/components/LoginForm.jsx  |    61 [31m-[m
+ .../library-frontend/src/components/NewBook.jsx    |   122 [31m-[m
+ .../library-frontend/src/components/Notify.jsx     |    13 [31m-[m
+ .../library-frontend/src/components/Recommend.jsx  |    66 [31m-[m
+ .../Desktop/part6/library-frontend/src/main.jsx    |    62 [31m-[m
+ .../Desktop/part6/library-frontend/src/queries.js  |    97 [31m-[m
+ .../library-frontend/src/utils/apolloCache.js      |    23 [31m-[m
+ .../Desktop/part6/library-frontend/vite.config.js  |     7 [31m-[m
+ OneDrive/Desktop/part6/tests-chapter4/.gitignore   |     1 [31m-[m
+ .../Desktop/part6/tests-chapter4/mutations.test.js |   370 [31m-[m
+ .../Desktop/part6/tests-chapter4/package-lock.json |   633 [31m-[m
+ OneDrive/Desktop/part6/tests-chapter4/package.json |    11 [31m-[m
+ .../Desktop/part6/tests-chapter4/queries.test.js   |   189 [31m-[m
+ .../Desktop/part6/tests-chapter4/test_helper.js    |   123 [31m-[m
+ OneDrive/Desktop/part6/tests-chapter5/.gitignore   |     6 [31m-[m
+ .../Desktop/part6/tests-chapter5/package-lock.json |   762 [31m--[m
+ OneDrive/Desktop/part6/tests-chapter5/package.json |    13 [31m-[m
+ .../part6/tests-chapter5/playwright.config.js      |    36 [31m-[m
+ .../tests-chapter5/setup/start-test-backend.js     |    43 [31m-[m
+ .../Desktop/part6/tests-chapter5/tests/helper.js   |   119 [31m-[m
+ .../part6/tests-chapter5/tests/library.spec.js     |   181 [31m-[m
+ README.md                                          |   Bin [31m20[m -> [32m0[m bytes
+ app.json                                           |    29 [32m+[m
+ assets/android-icon-background.png                 |   Bin [31m0[m -> [32m17549[m bytes
+ assets/android-icon-foreground.png                 |   Bin [31m0[m -> [32m78796[m bytes
+ assets/android-icon-monochrome.png                 |   Bin [31m0[m -> [32m4140[m bytes
+ assets/favicon.png                                 |   Bin [31m0[m -> [32m1129[m bytes
+ assets/icon.png                                    |   Bin [31m0[m -> [32m393493[m bytes
+ assets/splash-icon.png                             |   Bin [31m0[m -> [32m17547[m bytes
+ eslint.config.js                                   |    10 [32m+[m
+ index.js                                           |     8 [32m+[m
+ library-backend/.gitignore                         |     1 [31m-[m
+ library-backend/db.js                              |    15 [31m-[m
+ library-backend/index.js                           |    24 [31m-[m
+ library-backend/models/author.js                   |     1 [31m-[m
+ library-backend/models/authors.js                  |    16 [31m-[m
+ library-backend/models/book.js                     |     1 [31m-[m
+ library-backend/models/books.js                    |    27 [31m-[m
+ library-backend/models/user.js                     |    14 [31m-[m
+ library-backend/package-lock.json                  |  2123 [31m----[m
+ library-backend/package.json                       |    28 [31m-[m
+ library-backend/resolvers.js                       |   316 [31m-[m
+ library-backend/schema.js                          |    57 [31m-[m
+ library-backend/server.js                          |    86 [31m-[m
+ library-frontend/.gitignore                        |    24 [31m-[m
+ library-frontend/README.md                         |    16 [31m-[m
+ library-frontend/eslint.config.js                  |    29 [31m-[m
+ library-frontend/index.html                        |    13 [31m-[m
+ library-frontend/package-lock.json                 |  3095 [31m-----[m
+ library-frontend/package.json                      |    30 [31m-[m
+ library-frontend/public/vite.svg                   |     1 [31m-[m
+ library-frontend/src/App.jsx                       |   127 [31m-[m
+ library-frontend/src/components/Authors.jsx        |   102 [31m-[m
+ library-frontend/src/components/Books.jsx          |    70 [31m-[m
+ library-frontend/src/components/LoginForm.jsx      |    61 [31m-[m
+ library-frontend/src/components/NewBook.jsx        |   122 [31m-[m
+ library-frontend/src/components/Notify.jsx         |    13 [31m-[m
+ library-frontend/src/components/Recommend.jsx      |    66 [31m-[m
+ library-frontend/src/main.jsx                      |    62 [31m-[m
+ library-frontend/src/queries.js                    |    97 [31m-[m
+ library-frontend/src/utils/apolloCache.js          |    23 [31m-[m
+ library-frontend/vite.config.js                    |     7 [31m-[m
+ my-app/.gitignore                                  |    41 [32m+[m
+ my-app/AGENTS.md                                   |    41 [32m+[m
+ my-app/App.js                                      |    20 [32m+[m
+ my-app/LICENSE                                     |    21 [32m+[m
+ my-app/app.json                                    |    24 [32m+[m
+ my-app/assets/android-icon-background.png          |   Bin [31m0[m -> [32m17549[m bytes
+ my-app/assets/android-icon-foreground.png          |   Bin [31m0[m -> [32m78796[m bytes
+ my-app/assets/android-icon-monochrome.png          |   Bin [31m0[m -> [32m4140[m bytes
+ my-app/assets/favicon.png                          |   Bin [31m0[m -> [32m1129[m bytes
+ my-app/assets/icon.png                             |   Bin [31m0[m -> [32m393493[m bytes
+ my-app/assets/splash-icon.png                      |   Bin [31m0[m -> [32m17547[m bytes
+ my-app/index.js                                    |     8 [32m+[m
+ my-app/package-lock.json                           |  5977 [32m++++++++++[m
+ my-app/package.json                                |    18 [32m+[m
+ package-lock.json                                  | 11647 [32m+++++++++++++++++++[m
+ package.json                                       |    24 [32m+[m
+ tests-chapter4/.gitignore                          |     1 [31m-[m
+ tests-chapter4/mutations.test.js                   |   370 [31m-[m
+ tests-chapter4/package-lock.json                   |   633 [31m-[m
+ tests-chapter4/package.json                        |    11 [31m-[m
+ tests-chapter4/queries.test.js                     |   189 [31m-[m
+ tests-chapter4/test_helper.js                      |   123 [31m-[m
+ tests-chapter5/.gitignore                          |     6 [31m-[m
+ tests-chapter5/package-lock.json                   |   762 [31m--[m
+ tests-chapter5/package.json                        |    13 [31m-[m
+ tests-chapter5/playwright.config.js                |    36 [31m-[m
+ tests-chapter5/setup/start-test-backend.js         |    43 [31m-[m
+ tests-chapter5/tests/helper.js                     |   119 [31m-[m
+ tests-chapter5/tests/library.spec.js               |   177 [31m-[m
+ 123 files changed, 18044 insertions(+), 18456 deletions(-)
