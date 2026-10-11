@@ -1,0 +1,188 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run repository item tests",
+			"type": "shell",
+			"command": "npm test -- --runTestsByPath src/components/__tests__/RepositoryItem.list.test.js --watch=false",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Create mock dir",
+			"type": "shell",
+			"command": "mkdir src/components/__mocks__",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Probe testing library",
+			"type": "shell",
+			"command": "node -e \"const rtl=require('@testing-library/react-native'); console.log(Object.keys(rtl)); console.log(typeof rtl.render, typeof rtl.screen);\"",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Inspect render API",
+			"type": "shell",
+			"command": "cmd.exe /c \"cd /d c:\\Users\\farwa\\source\\rate-repository-app-clean && node -p \\\"Object.keys(require('@testing-library/react-native')).join(', ')\\\" && node -p \\\"typeof require('@testing-library/react-native').render\\\" && node -p \\\"typeof require('@testing-library/react-native').screen.getAllByTestId\\\"\"",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check screen API",
+			"type": "shell",
+			"command": "node -p \"typeof require('@testing-library/react-native').screen.getAllByTestId\"",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Cleanup temp mock",
+			"type": "shell",
+			"command": "del /f /q \"src\\components\\__mocks__\\useRepositories.js\"; if exist \"src\\components\\__mocks__\" rmdir /q \"src\\components\\__mocks__\"",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run login test",
+			"type": "shell",
+			"command": "npm test -- --runTestsByPath src/components/__tests__/login.test.js --watch=false",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Inspect render package",
+			"type": "shell",
+			"command": "cd /d c:\\Users\\farwa\\source\\rate-repository-app-clean & node -p \"typeof require('@testing-library/react-native').render; JSON.stringify(Object.keys(require('@testing-library/react-native')).slice(0,10)); typeof require('@testing-library/react-native').screen.getByText\"",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Rerun login Jest test",
+			"type": "shell",
+			"command": "npm test -- --runTestsByPath src/components/__tests__/login.test.js --watch=false",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify corrected login test",
+			"type": "shell",
+			"command": "npm test -- --runTestsByPath src/components/__tests__/login.test.js --watch=false",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Inspect Git status",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"status",
+				"--short",
+				"--branch"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check diff whitespace",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"diff",
+				"--check"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Get full Git state",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"status"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Inspect nested backend Git entry",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"ls-files",
+				"--stage",
+				"--",
+				"backend/rate-repository-api"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Inspect backend staged summary",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"diff",
+				"--cached",
+				"--summary",
+				"--",
+				"backend/rate-repository-api"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Inspect Git remotes",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"remote",
+				"-v"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check conflict rebase state",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"status"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Stage resolved files safely",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/c",
+				"git add -u && git rm --cached -f -- backend/rate-repository-api && git add App.js eslint.config.js app.json package.json package-lock.json .vscode/tasks.json README.md"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Review staged Git status",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"status"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Continue resolved rebase",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/c",
+				"git add .vscode/tasks.json && git -c core.editor=true rebase --continue"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

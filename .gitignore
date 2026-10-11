@@ -31,6 +31,10 @@ yarn-error.*
 *.pem
 
 # local env files
+<<<<<<< HEAD
+=======
+.env
+>>>>>>> e67308b (Initial commit with README)
 .env*.local
 
 # typescript
